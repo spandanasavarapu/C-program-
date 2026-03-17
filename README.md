@@ -441,3 +441,117 @@ r = n % 10; rev = rev * 10 + r; n = n / 10;
 if(temp == rev) printf("Palindrome number"); else printf("Not a palindrome"); 
 return 0; 
 }
+
+//To read a string #include <stdio.h> int mmain() { char name[20]; scanf("%s",name); printf("your name is %s",name); return 0; }
+
+//To find length of the string #include <stdio.h> #include <string.h> int main() { char str[50]="gnana sai"; int len=strlen(str); printf("lenght of the string:%d",len); return 0; }
+
+//To convert to lowercase,uppercase,string reverse #include <stdio.h> #include <string.h> int main() { char str[50]="GNANA SAI"; char str1[50]="gnana sai"; char str2[50]="GNANA SAI'; strlwr(str); strupr(str1); strrev(str2); printf("lowercase:%s\n",str); printf("uppercase:%s\n",str1); printf("reverse:%s",str2); return 0; }
+
+//To compare two strings #include <stdio.h> #include <string.h> int main() { char s1[20]="gnana sai"; char s2[20]="rahul sai"; if (strcmp(s1,s2)==0) { printf("s1&s2 are equal"); }else{ printf("s1&s2 are different"); } return 0; }
+
+//To append and copy two strings #include <stdio.h> #include <string.h> int main() { char s1[50]="gnana sai"; char s2[50]="dasararaju"; strcat(s1,s2); printf("output string is:%s\n",s1); strcpy(s1,s2); printf("output string is:%s",s1); return 0; }
+
+//To find length of the string without string function #include <stdio.h> int main() { char str[50]="dasararaju gnana sai"; int i=0,len=0; while (str[i]!="\0") { len++; i++ } printf("length:%d",len); return 0; }
+
+//To count no. of words in a string without string function #include <stdio.h> int main() { char str[100]="savarapu spandana"; int i,count=1; for (i=0;str[i]!="\0";i++) if (str[i]=='')
+{
+count++;
+} printf("no. of words=%d",count); return 0; }
+
+//To concantenate two strings without string function
+#include <stdio.h> 
+int main() 
+{
+char str1[20]="dasararaju"; char str2[20]="spandana"; 
+int i=0,j=0; 
+while (str1[i]!='\0') 
+{
+i++; 
+}
+while (str2[j]!='\0') 
+{ 
+str1[i]=str2[j]; i++; j++; 
+} 
+str[i]='\0'; 
+printf("%s",str1);
+return 0; }
+
+//To convert lower to uppercase without using string function
+
+#include <stdio.h> 
+int main() 
+{ 
+char str[20]="spandana"; int i=0; while(str[i]!='\0')
+{
+if(str[i]>='a'&&str[i]<='z') 
+{ str[i]=str[i]-32;
+} 
+i++;
+} 
+printf("%s",str); 
+return 0;
+}
+
+//To convert upper to lowercase without using string function
+
+#include <stdio.h> 
+int main() 
+{ 
+char str[20]="spandana"; int i=0; while(str[i]!='\0') 
+{ 
+if(str[i]>='A'&&str[i]<='Z')
+{ str[i]=str[i]+32;
+}
+i++;
+} printf("%s",str); 
+return 0; 
+}
+
+//To reverse a string without string function 
+#include <stdio.h> 
+int main() 
+{
+char str[20]="spandana"; char rev[20]; int i,j=0,l; l=strlen(str); for (i=l-1;i>=0;i--) 
+{
+rev[j]=str[i]; j++;
+}
+rev[i]='\0';
+printf("rev string:%s",rev);
+return 0;
+}
+
+//To print a palindrome
+
+#include <stdio.h>
+#include <string.h> 
+void main()
+{
+char str[10]="malayalam"; 
+int i,length,flag=0; length=strlen(str); for (i=0;i<length;i++) 
+{ 
+if(str[i]!=str[length-i-1]) 
+{
+flag=1; break;
+}
+}
+if (flag==1) { printf("%s is not a palindrome",str);
+}
+else{ printf("%s is a palindrome",str);
+}
+}
+
+//To count no. of vowels and no. of consonants in a sentence
+
+#include <stdio.h>
+void main()
+{
+char sentence[30]="spandana";
+int i,vowels=0;consonants=0; char ch; for (i=0;sentence[i]!='\0';i++)
+{ 
+ch=sentence[i]; if (ch>='a'&&ch<='z') { if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||) vowels++; else consonants++; 
+} 
+} 
+printf("no. of vowels:%d\n",vowels);
+printf("no. of consonants:%d",consonants); return 0;
+}
