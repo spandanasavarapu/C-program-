@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct song {
+    char title[50], artist[50], album[50];
+    float length;
+};
+int main(){
+    struct song s;
+    scanf("%s %s %s %f", s.title, s.artist, s.album, &s.length);
+    printf("%s %s %s %.2f", s.title, s.artist, s.album, s.length);
+}
