@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int x, limit, sum=0;
+
+    scanf("%d %d",&x,&limit);
+
+    for(int i=1;i<=limit;i++){
+        if(i%x==0)
+            sum+=i;
+    }
+
+    printf("%d", sum);
+    return 0;
+}
