@@ -1,0 +1,9 @@
+#include <stdio.h>
+struct contact {
+    char name[50], phone[15], email[50];
+};
+int main(){
+    struct contact c;
+    scanf("%s %s %s", c.name, c.phone, c.email);
+    printf("%s %s %s", c.name, c.phone, c.email);
+}
