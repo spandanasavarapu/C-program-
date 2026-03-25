@@ -1,0 +1,13 @@
+#include <stdio.h>
+struct dob {
+    int d, m, y;
+};
+int main(){
+    struct dob p;
+    int cy=2026, age;
+
+    scanf("%d %d %d", &p.d, &p.m, &p.y);
+    age = cy - p.y;
+
+    printf("Age=%d", age);
+}
