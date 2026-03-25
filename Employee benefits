@@ -1,0 +1,19 @@
+#include <stdio.h>
+struct emp {
+    char name[50];
+    int insurance, retirement, leave;
+};
+int main(){
+    struct emp e[3];
+    int i;
+
+    for(i=0;i<3;i++){
+        scanf("%s %d %d %d", e[i].name, &e[i].insurance,
+              &e[i].retirement, &e[i].leave);
+    }
+
+    for(i=0;i<3;i++){
+        printf("%s %d %d %d\n", e[i].name,
+               e[i].insurance, e[i].retirement, e[i].leave);
+    }
+}
