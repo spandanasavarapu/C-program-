@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct car {
+    char make[50], model[50];
+    int year;
+};
+int main(){
+    struct car c;
+    scanf("%s %s %d", c.make, c.model, &c.year);
+    printf("%s %s %d", c.make, c.model, c.year);
+}
