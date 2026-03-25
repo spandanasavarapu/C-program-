@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+struct emp{
+    char name[20];
+    int id;
+    float salary;
+};
+
+int main(){
+    struct emp e={"Jane",1001,65000};
+
+    printf("%s %d %.2f",e.name,e.id,e.salary);
+}
