@@ -1,0 +1,17 @@
+#include <stdio.h>
+struct sales {
+    int month, year;
+    float amount;
+};
+int main(){
+    struct sales s[12];
+    int i;
+
+    for(i=0;i<3;i++){
+        scanf("%d %d %f", &s[i].month, &s[i].year, &s[i].amount);
+    }
+
+    for(i=0;i<3;i++){
+        printf("%d/%d = %.2f\n", s[i].month, s[i].year, s[i].amount);
+    }
+}
