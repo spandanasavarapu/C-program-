@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct customer {
+    char name[50], address[100], phone[15];
+    float balance;
+};
+int main(){
+    struct customer c;
+    scanf("%s %s %s %f", c.name, c.address, c.phone, &c.balance);
+    printf("%s %s %s %.2f", c.name, c.address, c.phone, c.balance);
+}
