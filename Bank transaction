@@ -1,0 +1,16 @@
+#include <stdio.h>
+struct trans {
+    char type[10];
+    float amount;
+    char date[20];
+};
+int main(){
+    struct trans t[3];
+    int i;
+
+    for(i=0;i<3;i++)
+        scanf("%s %f %s", t[i].type, &t[i].amount, t[i].date);
+
+    for(i=0;i<3;i++)
+        printf("%s %.2f %s\n", t[i].type, t[i].amount, t[i].date);
+}
