@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    char s[100], old, newc;
+    int i=0;
+
+    scanf("%s", s);
+    scanf(" %c %c", &old, &newc);
+
+    while(s[i]){
+        if(s[i]==old)
+            s[i]=newc;
+        i++;
+    }
+
+    printf("%s", s);
+}
