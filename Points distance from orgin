@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+struct point {
+    int x, y;
+};
+int main(){
+    struct point p;
+    float d;
+
+    scanf("%d %d", &p.x, &p.y);
+    d = sqrt(p.x*p.x + p.y*p.y);
+
+    printf("Distance=%.2f", d);
+}
