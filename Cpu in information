@@ -1,0 +1,11 @@
+#include <stdio.h>
+struct cpu {
+    char manufacturer[50];
+    float speed;
+    int cores;
+};
+int main(){
+    struct cpu c;
+    scanf("%s %f %d", c.manufacturer, &c.speed, &c.cores);
+    printf("%s %.2fGHz %d cores", c.manufacturer, c.speed, c.cores);
+}
