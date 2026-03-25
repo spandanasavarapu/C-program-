@@ -1,0 +1,9 @@
+#include <stdio.h>
+struct weather {
+    float temp, humidity, wind;
+};
+int main(){
+    struct weather w;
+    scanf("%f %f %f", &w.temp, &w.humidity, &w.wind);
+    printf("Temp=%.2f Humidity=%.2f Wind=%.2f", w.temp, w.humidity, w.wind);
+}
