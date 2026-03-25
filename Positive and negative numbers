@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int n, num, pos = 0, neg = 0;
+
+    printf("How many numbers: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++)
+{
+        scanf("%d", &num);
+
+        if(num >= 0)
+            pos += num;
+        else
+            neg += num;
+    }
+
+    printf("Positive sum = %d\nNegative sum = %d", pos, neg);
+    return 0;
+}
