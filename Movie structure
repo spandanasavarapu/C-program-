@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct movie {
+    char title[50], director[50], actor[50];
+    char date[20];
+};
+int main(){
+    struct movie m;
+    scanf("%s %s %s %s", m.title, m.director, m.actor, m.date);
+    printf("%s %s %s %s", m.title, m.director, m.actor, m.date);
+}
