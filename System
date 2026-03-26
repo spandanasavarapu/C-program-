@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+struct customer{
+    char name[20];
+};
+
+int main(){
+    struct customer c={"John"};
+    printf("%s",c.name);
+}
